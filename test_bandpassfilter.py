@@ -20,5 +20,8 @@ def test_returns_above_max_val_lowered_to_max():
 def test_is_integer():
     assert bp.validator([10, 21]) == [10, 21]
 
-# def test_is_not_integer():
-#     assert bp.validator(["f", 21]) == False
+def test_is_integer_3():
+    assert bp.validator([9, 15, 20]) == [9, 15, 20]
+
+def test_is_not_integer():
+    assert bp.validator(["f", 21]) == "Invalid input"

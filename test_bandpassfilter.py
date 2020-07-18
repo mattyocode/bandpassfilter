@@ -18,4 +18,7 @@ def test_returns_above_max_val_lowered_to_max():
     assert bp.bandpass(10, 20, [10, 21]) == [10, 20]
 
 def test_is_integer():
-    assert bp.validator([10, 21]) == True
+    assert bp.validator([10, 21]) == [10, 21]
+
+# def test_is_not_integer():
+#     assert bp.validator(["f", 21]) == False

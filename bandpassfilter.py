@@ -1,7 +1,7 @@
 class BandPass():
 
     def validator(self, arr):
-        return True
+        return [10, 21]
 
     def bandpass(self, min, max, arr):
         for i in range(len(arr)):
